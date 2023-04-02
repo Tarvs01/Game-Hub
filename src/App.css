@@ -117,7 +117,7 @@ nav {
 
 nav svg {
   height: 50px;
-  width: fit-content !important;
+  width: fit-content;
 }
 
 @media screen and (max-width: 500px) {
