@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="A haven for all gamers" />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <title>Tarvs Hub</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div class="loader">
+      <div class="loader-content">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          version="1.1"
+          width="351"
+          height="125"
+          viewBox="0 0 351 125"
+        >
+          <g
+            transform="matrix(2.84 0 0 1 174.82 62.24)"
+            id="pGVm2nteJUYCb0H7KDloa"
+          >
+            <path
+              style="
+                stroke: rgb(247, 47, 58);
+                stroke-width: 1;
+                stroke-dasharray: none;
+                stroke-linecap: butt;
+                stroke-dashoffset: 0;
+                stroke-linejoin: miter;
+                stroke-miterlimit: 4;
+                fill: black;
+                fill-rule: nonzero;
+                opacity: 1;
+              "
+              vector-effect="non-scaling-stroke"
+              transform=" translate(0, 0)"
+              d="M -61.12489 -35.19179 C -61.12489 -49.51424 -57.03925 -61.12488 -51.99937 -61.12488 L 51.999359999999996 -61.12488 L 51.999359999999996 -61.12488 C 57.039249999999996 -61.12488 61.12488 -49.51424 61.12488 -35.19179 L 61.12488 35.1918 L 61.12488 35.1918 C 61.12488 49.514250000000004 57.03924 61.12489 51.999359999999996 61.12489 L -51.99937 61.12489 L -51.99937 61.12489 C -57.03926 61.12489 -61.12489 49.514250000000004 -61.12489 35.1918 z"
+              stroke-linecap="round"
+            />
+          </g>
+          <g transform="matrix(1 0 0 1 88.18 76.69)" id="WtsvfbDAg5Tan0_LXhES9">
+            <text
+              xml:space="preserve"
+              font-family="Quicksand"
+              font-size="56"
+              font-style="normal"
+              font-weight="700"
+              line-height="1"
+              style="
+                stroke: none;
+                stroke-width: 1;
+                stroke-dasharray: none;
+                stroke-linecap: butt;
+                stroke-dashoffset: 0;
+                stroke-linejoin: miter;
+                stroke-miterlimit: 4;
+                fill: white;
+                fill-rule: nonzero;
+                opacity: 1;
+                white-space: pre;
+              "
+            >
+              <tspan x="-78.8" y="8.78">GAME</tspan>
+            </text>
+          </g>
+          <g
+            transform="matrix(1.27 0 0 0.75 252.34 62.24)"
+            id="aCdz4mWG9Jf1SJiRwomKs"
+          >
+            <path
+              style="
+                stroke: rgb(65, 64, 171);
+                stroke-width: 0;
+                stroke-dasharray: none;
+                stroke-linecap: butt;
+                stroke-dashoffset: 0;
+                stroke-linejoin: miter;
+                stroke-miterlimit: 4;
+                fill: rgb(247, 47, 58);
+                fill-rule: nonzero;
+                opacity: 1;
+              "
+              vector-effect="non-scaling-stroke"
+              transform=" translate(0, 0)"
+              d="M -61.12469 -26.54735 C -61.12469 -45.64389 -51.97044 -61.124700000000004 -40.6781 -61.124700000000004 L 40.6781 -61.124700000000004 L 40.6781 -61.124700000000004 C 51.970439999999996 -61.124700000000004 61.12469 -45.643890000000006 61.12469 -26.54735 L 61.12469 26.54734 L 61.12469 26.54734 C 61.12469 45.643879999999996 51.97044 61.12469 40.6781 61.12469 L -40.6781 61.12469 L -40.6781 61.12469 C -51.970439999999996 61.12469 -61.12469 45.64388 -61.12469 26.54734 z"
+              stroke-linecap="round"
+            />
+          </g>
+          <g
+            transform="matrix(1 0 0 1 252.34 62.24)"
+            id="VTdBpGnNrYSL4FvlVFnw_"
+          >
+            <text
+              xml:space="preserve"
+              font-family="Quicksand"
+              font-size="57"
+              font-style="normal"
+              font-weight="700"
+              line-height="1"
+              style="
+                stroke: none;
+                stroke-width: 1;
+                stroke-dasharray: none;
+                stroke-linecap: butt;
+                stroke-dashoffset: 0;
+                stroke-linejoin: miter;
+                stroke-miterlimit: 4;
+                fill: rgb(0, 0, 0);
+                fill-rule: nonzero;
+                opacity: 1;
+                white-space: pre;
+              "
+            >
+              <tspan x="-67.5" y="24.11">HUB</tspan>
+            </text>
+          </g>
+        </svg>
+        <h2 class="atext">A haven for all gamers</h2>
+      </div>
+    </div>
+    <div id="root"></div>
+
+    <script src="anime.js"></script>
+    <script>
+      setTimeout(() => {
+        document.querySelector(".loader").style.display = "none";
+      }, 7000);
+
+      var textWrapper = document.querySelector(".atext");
+      textWrapper.innerHTML = textWrapper.textContent.replace(
+        /\S/g,
+        "<span class='letter'>$&</span>"
+      );
+
+      anime.timeline({ loop: false }).add({
+        targets: ".atext .letter",
+        opacity: [0, 1],
+        easing: "easeInOutQuad",
+        duration: 1500,
+        delay: (el, i) => 100 * (i + 1),
+      });
+      // .add({
+      //   targets: ".atext",
+      //   opacity: 0,
+      //   duration: 1000,
+      //   easing: "easeOutExpo",
+      //   delay: 1000,
+      // });
+    </script>
+  </body>
+</html>
