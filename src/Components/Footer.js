@@ -103,7 +103,7 @@ function Footer() {
           <h2>Join our newsletter.</h2>
           <form className="newsletter-form">
             <input type="email" placeholder="Email" required></input>
-            <button type="submit">Submit</button>
+            <button type="submit">Subscribe</button>
           </form>
         </div>
       </div>
