@@ -20,7 +20,8 @@ export const data = [
         name: "Wild Hearts",
         new : true,
         category: ["Strategy"],
-        img: "https://assets-prd.ignimgs.com/2023/02/16/wildhearts-1676575418849.jpg?width=300&crop=1%3A1%2Csmart",
+        /* img: "https://assets-prd.ignimgs.com/2023/02/16/wildhearts-1676575418849.jpg?width=300&crop=1%3A1%2Csmart", */
+        img: "../images/wildhearts-1676575418849.jpg",
         link: "https://store.steampowered.com/app/1938010/WILD_HEARTS/"
     },
     {
